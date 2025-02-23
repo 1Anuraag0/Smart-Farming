@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-white">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#E2F4DC] via-[#D5E6D0] to-white">
       <div className="container px-4 py-16 text-center animate-fade-down">
         <div className="inline-block">
           <span className="px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary">
