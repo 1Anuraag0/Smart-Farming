@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Navbar from '../components/Navbar';
+import HeroSection from '../components/HeroSection';
+import DashboardStats from '../components/DashboardStats';
+import WeatherCard from '../components/WeatherCard';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-[#FAFAF7]">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <HeroSection />
+      
+      {/* Dashboard Section */}
+      <section id="dashboard" className="py-16">
+        <div className="container px-4">
+          <h2 className="text-3xl font-bold mb-8">Farm Analytics</h2>
+          <DashboardStats />
+          
+          <div className="mt-8 grid md:grid-cols-2 gap-4">
+            <WeatherCard />
+            {/* More cards can be added here */}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
