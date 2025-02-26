@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
@@ -7,7 +6,7 @@ import WeatherCard from '../components/WeatherCard';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#FAFAF7]">
+      <div className="min-h-screen">
       <Navbar />
       
       {/* Hero Section */}
